@@ -24,7 +24,7 @@ router.post('/apiFinance', async (req, res) => {
             paymentMethod,
             transactionDate
         });
-
+        return res.status(201).json({ message: "Saved", id: result._id });
     } catch (error) {
         // จัดการข้อผิดพลาดในการแทรกข้อมูล
         console.error("Error inserting data:", error);

@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Secrets — copy back-end/.env.example to back-end/.env
+.env
+.env.*
+!.env.example
+
+# Build / logs / OS
+dist/
+*.log
+.DS_Store
+Thumbs.db
